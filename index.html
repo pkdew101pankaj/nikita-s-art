@@ -1,0 +1,1492 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>Nikita's Art (@nikita.art25) | Bespoke Bridal & Contemporary Henna Artistry</title>
+  <meta name="description" content="Nikita's Art (@nikita.art25) - Premier Bridal, Arabic, Festive, and Occasion Mehendi Artist. Official WhatsApp: 7828975132 | Email: mehandiartnikita25@gmail.com">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            henna: {
+              50: '#FDF8F5',
+              100: '#F9EDE6',
+              200: '#F1D7C8',
+              300: '#E4B89F',
+              400: '#D29272',
+              500: '#BD6F49',
+              600: '#9E5131',
+              700: '#7E3C22',
+              800: '#5F2C18',
+              900: '#3D1B0E',
+              950: '#230E07',
+            },
+            gold: {
+              300: '#F5DE94',
+              400: '#E9C762',
+              500: '#D4AF37',
+              600: '#B89225',
+              700: '#8E6E16',
+            },
+            cream: '#FAF6EE',
+            sand: '#F3EDE2',
+          },
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            playfair: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Subtle Mandala Background Pattern */
+    .bg-mandala {
+      background-color: #FAF6EE;
+      background-image: radial-gradient(#BD6F49 0.75px, transparent 0.75px), radial-gradient(#D4AF37 0.75px, #FAF6EE 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+    }
+    
+    .gold-shimmer {
+      background: linear-gradient(135deg, #D4AF37 0%, #FFF3B0 50%, #B89225 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px -10px rgba(61, 27, 14, 0.12);
+    }
+
+    .ig-gradient {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    @keyframes marquee-reverse {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 38s linear infinite;
+    }
+    .animate-marquee-reverse {
+      display: flex;
+      width: max-content;
+      animation: marquee-reverse 38s linear infinite;
+    }
+    .animate-marquee:hover, .animate-marquee-reverse:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body class="bg-cream text-henna-950 font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-henna-900 text-gold-300 text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wider flex items-center justify-center gap-2 border-b border-gold-600/30">
+    <i data-lucide="sparkles" class="w-4 h-4 text-gold-400"></i>
+    <span>Now Booking 2026 - 2027 Dates | Official WhatsApp: +91 78289 75132 | Follow on Instagram: @nikita.art25</span>
+    <i data-lucide="sparkles" class="w-4 h-4 text-gold-400"></i>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-henna-200/60 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="flex flex-col items-start group">
+          <span class="font-cinzel text-2xl sm:text-3xl font-bold tracking-widest text-henna-900 group-hover:text-henna-700 transition">
+            NIKITA'S <span class="text-gold-600">ART</span>
+          </span>
+          <span class="text-[10px] uppercase tracking-[0.3em] text-henna-600 -mt-1 font-semibold">
+            Bespoke Mehendi Couture | @nikita.art25
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center space-x-7 font-medium text-sm tracking-wide text-henna-900">
+          <a href="#home" class="hover:text-gold-600 transition">Home</a>
+          <a href="#about" class="hover:text-gold-600 transition">About Nikita</a>
+          <a href="#services" class="hover:text-gold-600 transition">Services</a>
+          <a href="#gallery" class="hover:text-gold-600 transition">Lookbook</a>
+          <a href="#instagram-feed" class="hover:text-gold-600 transition flex items-center gap-1 text-pink-700 font-semibold">
+            <i data-lucide="instagram" class="w-4 h-4"></i> Instagram
+          </a>
+          <a href="#calculator" class="hover:text-gold-600 transition">Price Estimator</a>
+          <a href="#testimonials" class="hover:text-gold-600 transition">Reviews</a>
+          <a href="#contact" class="hover:text-gold-600 transition">Contact</a>
+        </div>
+
+        <!-- Book CTA Button -->
+        <div class="hidden md:flex items-center space-x-3">
+          <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="text-henna-700 hover:text-pink-600 transition p-2" title="Instagram: @nikita.art25">
+            <i data-lucide="instagram" class="w-5 h-5"></i>
+          </a>
+          <a href="https://wa.me/917828975132?text=Hello%20Nikita!%20I%20would%20like%20to%20inquire%20about%20your%20mehendi%20services." target="_blank" class="text-emerald-700 hover:text-emerald-600 transition p-2" title="Chat on WhatsApp: +91 78289 75132">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+          </a>
+          <a href="#book" class="inline-flex items-center gap-2 bg-gradient-to-r from-henna-800 to-henna-700 hover:from-henna-900 hover:to-henna-800 text-gold-300 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-widest shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 border border-gold-500/30">
+            <span>Book Now</span>
+            <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center gap-3">
+          <a href="https://wa.me/917828975132" target="_blank" class="text-emerald-700 p-1">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+          </a>
+          <button id="mobile-menu-btn" class="text-henna-900 p-2 focus:outline-none">
+            <i data-lucide="menu" class="w-7 h-7"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-sand border-b border-henna-200 px-6 py-5 space-y-4 font-medium text-henna-900 shadow-xl">
+      <a href="#home" class="block py-1 hover:text-gold-600" onclick="toggleMobileMenu()">Home</a>
+      <a href="#about" class="block py-1 hover:text-gold-600" onclick="toggleMobileMenu()">About Nikita</a>
+      <a href="#services" class="block py-1 hover:text-gold-600" onclick="toggleMobileMenu()">Our Services</a>
+      <a href="#gallery" class="block py-1 hover:text-gold-600" onclick="toggleMobileMenu()">Lookbook / Portfolio</a>
+      <a href="#instagram-feed" class="block py-1 text-pink-700 font-semibold" onclick="toggleMobileMenu()">Instagram @nikita.art25</a>
+      <a href="#calculator" class="block py-1 hover:text-gold-600" onclick="toggleMobileMenu()">Package Estimator</a>
+      <a href="#testimonials" class="block py-1 hover:text-gold-600" onclick="toggleMobileMenu()">Client Reviews</a>
+      <a href="#contact" class="block py-1 hover:text-gold-600" onclick="toggleMobileMenu()">Contact & Booking</a>
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="https://wa.me/917828975132?text=Hello%20Nikita!%20I%20want%20to%20book%20a%20mehendi%20session." target="_blank" class="block py-2.5 text-center bg-emerald-600 text-white rounded-lg text-sm font-semibold uppercase tracking-wider flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp 7828975132
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative pt-12 pb-20 md:py-28 overflow-hidden bg-sand border-b border-henna-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-henna-100/90 border border-henna-300 text-henna-800 text-xs font-semibold uppercase tracking-widest">
+            <i data-lucide="award" class="w-4 h-4 text-gold-600"></i>
+            <span>Artistry by Nikita | Instagram: @nikita.art25</span>
+          </div>
+
+          <h1 class="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-extrabold text-henna-950 leading-[1.15] tracking-tight">
+            Weaving Your Love Story <br class="hidden sm:inline">
+            <span class="font-playfair italic font-normal text-henna-700">into Timeless</span>
+            <span class="gold-shimmer"> Mehendi Art</span>
+          </h1>
+
+          <p class="text-henna-800/90 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+            Welcome to <strong class="font-semibold text-henna-950">Nikita's Art</strong>. From bespoke royal bridal figures and custom couple portraits to elegant contemporary Arabic and festive henna, we handcraft exquisite stains with 100% natural, triple-sifted organic henna.
+          </p>
+
+          <!-- Contact Quick Callouts -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1 text-xs">
+            <a href="https://wa.me/917828975132" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-100 text-emerald-900 border border-emerald-300 font-semibold hover:bg-emerald-200 transition">
+              <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-700"></i> WhatsApp: 7828975132
+            </a>
+            <a href="mailto:mehandiartnikita25@gmail.com" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-100 text-amber-900 border border-amber-300 font-semibold hover:bg-amber-200 transition">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-700"></i> mehandiartnikita25@gmail.com
+            </a>
+            <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-pink-100 text-pink-900 border border-pink-300 font-semibold hover:bg-pink-200 transition">
+              <i data-lucide="instagram" class="w-3.5 h-3.5 text-pink-700"></i> @nikita.art25
+            </a>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+            <a href="https://wa.me/917828975132?text=Hello%20Nikita!%20I%20want%20to%20book%20a%20bridal/event%20mehendi%20date." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-3.5 rounded-full font-cinzel text-sm font-bold uppercase tracking-widest shadow-xl hover:shadow-2xl transition transform hover:-translate-y-0.5">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Book on WhatsApp</span>
+            </a>
+            <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-pink-600 via-rose-600 to-amber-600 text-white px-7 py-3.5 rounded-full text-sm font-semibold tracking-wide shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+              <span>View @nikita.art25 on Instagram</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Bar -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-henna-300/60 max-w-xl mx-auto lg:mx-0">
+            <div class="text-center lg:text-left">
+              <div class="font-cinzel text-2xl font-bold text-henna-900">850+</div>
+              <div class="text-xs text-henna-600 font-medium">Brides Styled</div>
+            </div>
+            <div class="text-center lg:text-left">
+              <div class="font-cinzel text-2xl font-bold text-henna-900">100%</div>
+              <div class="text-xs text-henna-600 font-medium">Organic & Pure</div>
+            </div>
+            <div class="text-center lg:text-left">
+              <div class="font-cinzel text-2xl font-bold text-henna-900">9+ Yrs</div>
+              <div class="text-xs text-henna-600 font-medium">Fine Artistry</div>
+            </div>
+            <div class="text-center lg:text-left">
+              <div class="font-cinzel text-2xl font-bold text-henna-900">4.9 / 5.0</div>
+              <div class="text-xs text-henna-600 font-medium">Client Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Decorative Glow Frame -->
+            <div class="absolute -inset-4 bg-gradient-to-tr from-gold-400/30 to-henna-600/20 rounded-3xl blur-xl"></div>
+            
+            <div class="relative bg-white p-3 rounded-2xl shadow-2xl border border-henna-200">
+              <div class="overflow-hidden rounded-xl aspect-[4/5] bg-henna-100 relative group">
+                <img 
+                  src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Henna_on_the_hand_of_a_bride%2C_India_%282016%29.jpg/960px-Henna_on_the_hand_of_a_bride%2C_India_%282016%29.jpg" referrerpolicy="no-referrer" 
+                  alt="Intricate Bridal Mehendi by Nikita's Art" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+                />
+                
+                <!-- Floating Instagram Badge -->
+                <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="absolute bottom-4 left-4 right-4 bg-cream/95 backdrop-blur-md p-4 rounded-xl shadow-lg border border-gold-500/30 flex items-center justify-between hover:bg-white transition">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-full ig-gradient p-0.5 flex items-center justify-center text-white">
+                      <div class="w-full h-full bg-henna-950 rounded-full flex items-center justify-center">
+                        <i data-lucide="instagram" class="w-4 h-4 text-pink-400"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-[10px] uppercase font-bold text-gold-700 tracking-wider">Official Instagram</p>
+                      <p class="font-bold text-henna-950 text-sm">@nikita.art25</p>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-bold bg-henna-900 text-gold-300">
+                    Follow
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM SPOTLIGHT SECTION -->
+  <section id="instagram-feed" class="py-16 bg-cream border-b border-henna-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-pink-700">
+            <i data-lucide="instagram" class="w-4 h-4"></i>
+            Follow Along On Social Media
+          </div>
+          <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-henna-950 mt-1">
+            Live From Instagram: <span class="text-pink-700">@nikita.art25</span>
+          </h2>
+          <p class="text-henna-700 text-sm mt-1">
+            Explore daily mehendi reels, fresh bridal client stains, and behind-the-scenes artistry.
+          </p>
+        </div>
+        
+        <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-600 via-rose-600 to-amber-600 hover:opacity-95 text-white px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider shadow-md transition transform hover:-translate-y-0.5">
+          <i data-lucide="instagram" class="w-4 h-4"></i>
+          <span>Visit @nikita.art25 on Instagram</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <!-- Instagram Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- Post 1 -->
+        <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="group relative overflow-hidden rounded-2xl bg-henna-100 aspect-square shadow-sm border border-henna-200 block">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Mehndi_work_at_a_south_indian_wedding.jpg/960px-Mehndi_work_at_a_south_indian_wedding.jpg" referrerpolicy="no-referrer" alt="Nikita's Art Mehendi on Instagram" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-henna-950/70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center text-white gap-2 p-4 text-center">
+            <i data-lucide="instagram" class="w-6 h-6 text-pink-400"></i>
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-300">Royal Bridal Henna</span>
+            <span class="text-[11px] text-henna-200">View post on @nikita.art25</span>
+          </div>
+        </a>
+
+        <!-- Post 2 -->
+        <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="group relative overflow-hidden rounded-2xl bg-henna-100 aspect-square shadow-sm border border-henna-200 block">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Indian_Mehndi_Culture_%281%29_03.jpg/960px-Indian_Mehndi_Culture_%281%29_03.jpg" referrerpolicy="no-referrer" alt="Arabic Mehendi Art on Instagram" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-henna-950/70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center text-white gap-2 p-4 text-center">
+            <i data-lucide="video" class="w-6 h-6 text-gold-400"></i>
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-300">Indo-Arabic Reel</span>
+            <span class="text-[11px] text-henna-200">Watch on @nikita.art25</span>
+          </div>
+        </a>
+
+        <!-- Post 3 -->
+        <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="group relative overflow-hidden rounded-2xl bg-henna-100 aspect-square shadow-sm border border-henna-200 block">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Indian_Mehndi_Culture_%281%29_05.jpg/960px-Indian_Mehndi_Culture_%281%29_05.jpg" referrerpolicy="no-referrer" alt="Festive Henna by Nikita" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-henna-950/70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center text-white gap-2 p-4 text-center">
+            <i data-lucide="instagram" class="w-6 h-6 text-pink-400"></i>
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-300">Festive Karwa Chauth</span>
+            <span class="text-[11px] text-henna-200">View post on @nikita.art25</span>
+          </div>
+        </a>
+
+        <!-- Post 4 -->
+        <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="group relative overflow-hidden rounded-2xl bg-henna-100 aspect-square shadow-sm border border-henna-200 block">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Indian_wedding_moment.jpeg/960px-Indian_wedding_moment.jpeg" referrerpolicy="no-referrer" alt="Bridal Feet Henna by Nikita" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-henna-950/70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center text-white gap-2 p-4 text-center">
+            <i data-lucide="instagram" class="w-6 h-6 text-pink-400"></i>
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-300">Bridal Feet Jaal</span>
+            <span class="text-[11px] text-henna-200">View post on @nikita.art25</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT NIKITA SECTION -->
+  <section id="about" class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 order-2 lg:order-1">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Mehndi_work_at_a_south_indian_wedding.jpg/960px-Mehndi_work_at_a_south_indian_wedding.jpg" referrerpolicy="no-referrer" alt="Henna paste preparation" class="rounded-2xl shadow-md object-cover h-64 w-full">
+              <div class="bg-sand p-5 rounded-2xl border border-henna-200 text-center">
+                <i data-lucide="leaf" class="w-8 h-8 text-green-700 mx-auto mb-2"></i>
+                <h4 class="font-cinzel font-bold text-sm text-henna-900">Zero Chemicals</h4>
+                <p class="text-xs text-henna-700 mt-1">No PPD, no synthetic dyes, safe for pregnant mothers.</p>
+              </div>
+            </div>
+            <div class="space-y-4 pt-8">
+              <div class="bg-henna-900 text-gold-300 p-5 rounded-2xl text-center">
+                <i data-lucide="heart-handshake" class="w-8 h-8 text-gold-400 mx-auto mb-2"></i>
+                <h4 class="font-cinzel font-bold text-sm">Story-Driven</h4>
+                <p class="text-xs text-henna-200 mt-1">Custom motifs of your memories, pets, & proposals.</p>
+              </div>
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Indian_wedding_moment.jpeg/960px-Indian_wedding_moment.jpeg" referrerpolicy="no-referrer" alt="Nikita applying henna" class="rounded-2xl shadow-md object-cover h-64 w-full">
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-gold-700">
+            <span class="w-8 h-px bg-gold-600"></span>
+            Meet The Artist
+          </div>
+          <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-henna-950">
+            "Every hand is a blank canvas, and every bride carries a poetry of love."
+          </h2>
+          <p class="text-henna-800 leading-relaxed text-base">
+            I am <strong class="text-henna-950">Nikita</strong> (Instagram: <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="text-pink-700 font-semibold underline">@nikita.art25</a>), the creative mind and lead artist behind <em>Nikita's Art</em>. For over 9 years, I have had the joyous honor of adorning brides and clients for their most cherished celebrations.
+          </p>
+          <p class="text-henna-800 leading-relaxed text-base">
+            Unlike mass commercial henna services, my philosophy centers on <strong>purity and soulful storytelling</strong>. I personally prepare every batch of henna paste using premium triple-sifted Sojat henna leaves, pure eucalyptus, and cajeput essential oils - ensuring not only an exquisite dark mahogany stain, but also a rich, therapeutic aromatic experience.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-gold-400/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4 text-gold-700"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm text-henna-950">Direct WhatsApp Booking</h4>
+                <p class="text-xs text-henna-700">Quick response on +91 78289 75132.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-gold-400/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4 text-gold-700"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm text-henna-950">Guaranteed Dark Stain</h4>
+                <p class="text-xs text-henna-700">Triple-sifted organic paste with our complimentary aftercare balm.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-gold-400/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4 text-gold-700"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm text-henna-950">Available for Travel</h4>
+                <p class="text-xs text-henna-700">Available to travel for destination weddings and bridal parties.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-gold-400/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4 text-gold-700"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm text-henna-950">Trained Professional Team</h4>
+                <p class="text-xs text-henna-700">Capable of styling 50 to 200+ guests during Sangeet nights.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex items-center gap-4">
+            <a href="https://wa.me/917828975132" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-full font-cinzel font-bold text-xs uppercase tracking-widest shadow transition">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Chat on WhatsApp</span>
+            </a>
+            <a href="mailto:mehandiartnikita25@gmail.com" class="inline-flex items-center gap-2 text-henna-900 font-cinzel font-bold text-xs tracking-widest hover:text-gold-700 transition">
+              <span>mehandiartnikita25@gmail.com</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL SERVICES SECTION -->
+  <section id="services" class="py-20 bg-sand border-y border-henna-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-gold-700">
+          <span class="w-8 h-px bg-gold-600"></span>
+          What We Offer
+          <span class="w-8 h-px bg-gold-600"></span>
+        </div>
+        <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-henna-950">
+          Comprehensive Mehendi Services
+        </h2>
+        <p class="text-henna-800 text-sm sm:text-base">
+          From the royal sanctity of wedding vows to joyous festive celebrations, explore our specialized artistry tailored for every milestone.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Bridal Mehendi -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-henna-200 shadow-sm card-hover flex flex-col">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Birdal_mehndi_design.png/960px-Birdal_mehndi_design.png" referrerpolicy="no-referrer" alt="Bridal Mehendi" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+            <span class="absolute top-4 right-4 bg-henna-900 text-gold-300 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-cinzel text-xl font-bold text-henna-950 mb-2">Royal Bridal Mehendi</h3>
+              <p class="text-sm text-henna-700 leading-relaxed">
+                Full forearm to elbow & feet designs. Incorporates intricate bride-groom portraits, wedding rituals, *shehnai* & *doli* motifs, and hidden names.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-henna-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-henna-600">Time: 4 - 7 Hours</span>
+              <a href="https://wa.me/917828975132?text=Hi%20Nikita!%20I'd%20like%20to%20book%20the%20Royal%20Bridal%20Mehendi%20service." target="_blank" class="text-xs font-bold font-cinzel text-emerald-700 hover:text-emerald-800 flex items-center gap-1">
+                Book on WhatsApp <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Contemporary Arabic & Indo-Western -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-henna-200 shadow-sm card-hover flex flex-col">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Mehndi_work_at_a_south_indian_wedding.jpg/960px-Mehndi_work_at_a_south_indian_wedding.jpg" referrerpolicy="no-referrer" alt="Arabic Mehendi Art" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+            <span class="absolute top-4 right-4 bg-gold-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Modern</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-cinzel text-xl font-bold text-henna-950 mb-2">Arabic & Indo-Western</h3>
+              <p class="text-sm text-henna-700 leading-relaxed">
+                Bold, flowing botanical vines, floral paisleys, negative space shading, and modern wrist cuffs. Perfect for engagements and contemporary fashionistas.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-henna-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-henna-600">Time: 30 - 60 Mins per side</span>
+              <a href="https://wa.me/917828975132?text=Hi%20Nikita!%20I'd%20like%20to%20book%20an%20Arabic%20Mehendi%20session." target="_blank" class="text-xs font-bold font-cinzel text-emerald-700 hover:text-emerald-800 flex items-center gap-1">
+                Book on WhatsApp <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Festive Mehendi Collections -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-henna-200 shadow-sm card-hover flex flex-col">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Indian_Mehndi_Culture_%281%29_03.jpg/960px-Indian_Mehndi_Culture_%281%29_03.jpg" referrerpolicy="no-referrer" alt="Festive Mehendi" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+            <span class="absolute top-4 right-4 bg-henna-700 text-gold-200 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Festivals</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-cinzel text-xl font-bold text-henna-950 mb-2">Festive Celebrations</h3>
+              <p class="text-sm text-henna-700 leading-relaxed">
+                Special curated patterns for Karwa Chauth, Teej, Diwali, Eid, Raksha Bandhan, and Navratri. Quick yet deeply elegant festive packages.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-henna-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-henna-600">Slots: Pre-Booking Open</span>
+              <a href="https://wa.me/917828975132?text=Hi%20Nikita!%20I'd%20like%20to%20inquire%20about%20Festive%20Mehendi%20slots." target="_blank" class="text-xs font-bold font-cinzel text-emerald-700 hover:text-emerald-800 flex items-center gap-1">
+                Book on WhatsApp <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Sangeet & Guest Party Packages -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-henna-200 shadow-sm card-hover flex flex-col">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Indian_wedding_moment.jpeg/960px-Indian_wedding_moment.jpeg" referrerpolicy="no-referrer" alt="Guest Henna Party" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+            <span class="absolute top-4 right-4 bg-sand border border-henna-300 text-henna-900 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Group Events</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-cinzel text-xl font-bold text-henna-950 mb-2">Sangeet & Party Henna</h3>
+              <p class="text-sm text-henna-700 leading-relaxed">
+                Hourly and per-guest booking packages for bridesmaids, friends, and family during Sangeet & Mehendi nights. Fast, neat, and photogenic designs.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-henna-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-henna-600">Speed: 10-15 guests/hr</span>
+              <a href="https://wa.me/917828975132?text=Hi%20Nikita!%20I'd%20like%20to%20book%20a%20Sangeet/Guest%20Henna%20package." target="_blank" class="text-xs font-bold font-cinzel text-emerald-700 hover:text-emerald-800 flex items-center gap-1">
+                Book on WhatsApp <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5: Baby Shower & Godh Bharai -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-henna-200 shadow-sm card-hover flex flex-col">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Indian_Mehndi_Culture_%281%29_02.jpg/960px-Indian_Mehndi_Culture_%281%29_02.jpg" referrerpolicy="no-referrer" alt="Baby shower henna" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+            <span class="absolute top-4 right-4 bg-purple-100 text-purple-900 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Pregnancy Safe</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-cinzel text-xl font-bold text-henna-950 mb-2">Baby Shower / Godh Bharai</h3>
+              <p class="text-sm text-henna-700 leading-relaxed">
+                Gentle, 100% lavender-infused certified safe organic henna for expecting mothers. Includes maternal belly art, auspicious mandalas, and blessings.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-henna-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-henna-600">100% Lavender Oil</span>
+              <a href="https://wa.me/917828975132?text=Hi%20Nikita!%20I'd%20like%20to%20book%20a%20Baby%20Shower%20henna%20session." target="_blank" class="text-xs font-bold font-cinzel text-emerald-700 hover:text-emerald-800 flex items-center gap-1">
+                Book on WhatsApp <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: Minimalist Mandala & Finger Accents -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-henna-200 shadow-sm card-hover flex flex-col">
+          <div class="h-60 overflow-hidden relative">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Indian_Mehndi_Culture_%281%29_05.jpg/960px-Indian_Mehndi_Culture_%281%29_05.jpg" referrerpolicy="no-referrer" alt="Minimalist Henna" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+            <span class="absolute top-4 right-4 bg-emerald-100 text-emerald-900 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Aesthetic</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-cinzel text-xl font-bold text-henna-950 mb-2">Minimalist & Western Henna</h3>
+              <p class="text-sm text-henna-700 leading-relaxed">
+                Boho chic finger jewelry, delicate wrist cuffs, geometric mandalas, and white/glitter party accents for casual occasions and college fests.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-henna-100 flex items-center justify-between">
+              <span class="text-xs font-semibold text-henna-600">Time: 15 - 30 Mins</span>
+              <a href="https://wa.me/917828975132?text=Hi%20Nikita!%20I'd%20like%20to%20inquire%20about%20Minimalist%20Henna." target="_blank" class="text-xs font-bold font-cinzel text-emerald-700 hover:text-emerald-800 flex items-center gap-1">
+                Book on WhatsApp <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE LOOKBOOK / GALLERY -->
+  <section id="gallery" class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-10">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-gold-700">
+          <span class="w-8 h-px bg-gold-600"></span>
+          Visual Masterpieces
+          <span class="w-8 h-px bg-gold-600"></span>
+        </div>
+        <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-henna-950">
+          The Bridal & Occasion Lookbook
+        </h2>
+        <p class="text-henna-800 text-sm sm:text-base">
+          Browse through our creations. Filter by category to find inspiration for your special day.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-2 pt-6">
+          <button onclick="filterGallery('all')" class="gallery-btn active px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-henna-900 text-gold-300 shadow">All Works</button>
+          <button onclick="filterGallery('bridal')" class="gallery-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-sand text-henna-900 hover:bg-henna-200">Bridal</button>
+          <button onclick="filterGallery('arabic')" class="gallery-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-sand text-henna-900 hover:bg-henna-200">Arabic</button>
+          <button onclick="filterGallery('festive')" class="gallery-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-sand text-henna-900 hover:bg-henna-200">Festivals</button>
+          <button onclick="filterGallery('feet')" class="gallery-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-sand text-henna-900 hover:bg-henna-200">Feet & Ankles</button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Item 1 -->
+        <div class="gallery-item bridal relative group overflow-hidden rounded-2xl bg-white shadow-md border border-henna-200 aspect-[4/5] cursor-pointer" onclick="openLightbox('https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Indian_Traditional_Wedding_Images_%2840%29.jpg/960px-Indian_Traditional_Wedding_Images_%2840%29.jpg', 'Royal Bridal Portrait Henna', 'Intricate figures of bride & groom with traditional baraat motifs.')">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Indian_Traditional_Wedding_Images_%2840%29.jpg/960px-Indian_Traditional_Wedding_Images_%2840%29.jpg" referrerpolicy="no-referrer" alt="Royal Bridal Henna" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-henna-950/90 via-henna-950/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 p-6 flex flex-col justify-end text-white">
+            <span class="text-xs text-gold-400 font-semibold uppercase tracking-widest">Bridal Collection</span>
+            <h4 class="font-cinzel text-lg font-bold">Royal Couple Portrait Henna</h4>
+            <p class="text-xs text-henna-200 mt-1">Click to view details</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item arabic relative group overflow-hidden rounded-2xl bg-white shadow-md border border-henna-200 aspect-[4/5] cursor-pointer" onclick="openLightbox('https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/HENNA-115.jpg/960px-HENNA-115.jpg', 'Flowing Indo-Arabic Vines', 'Bold shading, delicate negative space, and floral mandalas.')">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Mehndi_work_at_a_south_indian_wedding.jpg/960px-Mehndi_work_at_a_south_indian_wedding.jpg" referrerpolicy="no-referrer" alt="Arabic Henna" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-henna-950/90 via-henna-950/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 p-6 flex flex-col justify-end text-white">
+            <span class="text-xs text-gold-400 font-semibold uppercase tracking-widest">Arabic Elegance</span>
+            <h4 class="font-cinzel text-lg font-bold">Flowing Indo-Arabic Vines</h4>
+            <p class="text-xs text-henna-200 mt-1">Click to view details</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item festive relative group overflow-hidden rounded-2xl bg-white shadow-md border border-henna-200 aspect-[4/5] cursor-pointer" onclick="openLightbox('https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Indian_Mehndi_Culture_%281%29_04.jpg/960px-Indian_Mehndi_Culture_%281%29_04.jpg', 'Karwa Chauth Moon & Chalni Mandala', 'Auspicious festive centerpiece with fine fingertip jaal.')">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Indian_Mehndi_Culture_%281%29_03.jpg/960px-Indian_Mehndi_Culture_%281%29_03.jpg" referrerpolicy="no-referrer" alt="Karwa Chauth Henna" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-henna-950/90 via-henna-950/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 p-6 flex flex-col justify-end text-white">
+            <span class="text-xs text-gold-400 font-semibold uppercase tracking-widest">Festival Edition</span>
+            <h4 class="font-cinzel text-lg font-bold">Karwa Chauth Moon Mandala</h4>
+            <p class="text-xs text-henna-200 mt-1">Click to view details</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item feet relative group overflow-hidden rounded-2xl bg-white shadow-md border border-henna-200 aspect-[4/5] cursor-pointer" onclick="openLightbox('https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/HENNA-189.jpg/960px-HENNA-189.jpg', 'Bridal Feet & Payal Henna', 'Graceful anklet chains and lotus feet motifs for the bride.')">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Indian_Mehndi_Culture_%281%29_05.jpg/960px-Indian_Mehndi_Culture_%281%29_05.jpg" referrerpolicy="no-referrer" alt="Feet Henna" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-henna-950/90 via-henna-950/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 p-6 flex flex-col justify-end text-white">
+            <span class="text-xs text-gold-400 font-semibold uppercase tracking-widest">Feet & Ankles</span>
+            <h4 class="font-cinzel text-lg font-bold">Bridal Feet & Payal Chains</h4>
+            <p class="text-xs text-henna-200 mt-1">Click to view details</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item bridal relative group overflow-hidden rounded-2xl bg-white shadow-md border border-henna-200 aspect-[4/5] cursor-pointer" onclick="openLightbox('https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Indian_Mehndi_Culture_%281%29_01.jpg/960px-Indian_Mehndi_Culture_%281%29_01.jpg', 'Symmetric Bridal Palms', 'Hyper-detailed lotus jaal, peacock feathers, and wedding dates.')">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Indian_Mehndi_Culture_%281%29_01.jpg/960px-Indian_Mehndi_Culture_%281%29_01.jpg" referrerpolicy="no-referrer" alt="Bridal Palms" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-henna-950/90 via-henna-950/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 p-6 flex flex-col justify-end text-white">
+            <span class="text-xs text-gold-400 font-semibold uppercase tracking-widest">Bridal Symmetrical</span>
+            <h4 class="font-cinzel text-lg font-bold">Lotus Jaal & Peacock</h4>
+            <p class="text-xs text-henna-200 mt-1">Click to view details</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item arabic relative group overflow-hidden rounded-2xl bg-white shadow-md border border-henna-200 aspect-[4/5] cursor-pointer" onclick="openLightbox('https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/HENNA-118.jpg/960px-HENNA-118.jpg', 'Modern Wrist Cuff & Rings', 'Minimalist jewelry-inspired henna ideal for western & festive wear.')">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Indian_wedding_moment.jpeg/960px-Indian_wedding_moment.jpeg" referrerpolicy="no-referrer" alt="Wrist Cuff Henna" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-henna-950/90 via-henna-950/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 p-6 flex flex-col justify-end text-white">
+            <span class="text-xs text-gold-400 font-semibold uppercase tracking-widest">Modern Chic</span>
+            <h4 class="font-cinzel text-lg font-bold">Wrist Cuff & Ring Henna</h4>
+            <p class="text-xs text-henna-200 mt-1">Click to view details</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-gold-400 transition">
+      <i data-lucide="x" class="w-8 h-8"></i>
+    </button>
+    <div class="max-w-3xl w-full bg-henna-950 rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl">
+      <img id="lightbox-img" src="" alt="Enlarged Henna View" class="w-full max-h-[70vh] object-contain bg-black/40">
+      <div class="p-6 text-white bg-henna-900/90 border-t border-gold-500/20">
+        <h3 id="lightbox-title" class="font-cinzel text-xl font-bold text-gold-300"></h3>
+        <p id="lightbox-desc" class="text-sm text-henna-200 mt-1"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE PACKAGE & PRICING ESTIMATOR -->
+  <section id="calculator" class="py-20 bg-sand border-t border-henna-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-4 mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-gold-700">
+          <i data-lucide="calculator" class="w-4 h-4"></i>
+          Transparent Planning
+        </div>
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-henna-950">
+          Custom Package & Time Estimator
+        </h2>
+        <p class="text-henna-800 text-sm">
+          Select your requirements below to calculate an instant estimate and recommended session duration.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 sm:p-10 rounded-3xl border border-henna-200 shadow-xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Options Controls -->
+          <div class="space-y-6">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-henna-900 mb-2">Service Type</label>
+              <select id="calc-service" onchange="calculateEstimate()" class="w-full bg-sand border border-henna-300 rounded-xl px-4 py-3 text-sm font-medium text-henna-950 focus:outline-none focus:ring-2 focus:ring-gold-500">
+                <option value="bridal">Royal Bridal Mehendi</option>
+                <option value="arabic">Arabic & Indo-Western (Casual/Engage)</option>
+                <option value="festive">Festive / Occasion (Karwa Chauth/Diwali/Eid)</option>
+                <option value="guest">Sangeet / Guest Henna Party</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-henna-900 mb-2">Hand Coverage Level</label>
+              <select id="calc-coverage" onchange="calculateEstimate()" class="w-full bg-sand border border-henna-300 rounded-xl px-4 py-3 text-sm font-medium text-henna-950 focus:outline-none focus:ring-2 focus:ring-gold-500">
+                <option value="elbow">Full Arms up to Elbow (Both Sides)</option>
+                <option value="forearm">Mid-Forearm (Both Sides)</option>
+                <option value="wrist">Palms & Wrists Only</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-henna-900 mb-2">Feet Mehendi Add-On</label>
+              <div class="flex gap-4">
+                <label class="flex items-center gap-2 cursor-pointer text-sm font-medium text-henna-900">
+                  <input type="radio" name="feet-option" value="yes" onchange="calculateEstimate()" class="accent-henna-800" checked>
+                  Include Feet / Ankles
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer text-sm font-medium text-henna-900">
+                  <input type="radio" name="feet-option" value="no" onchange="calculateEstimate()" class="accent-henna-800">
+                  Hands Only
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-henna-900 mb-2">Custom Portrait / Story Motifs</label>
+              <div class="flex gap-4">
+                <label class="flex items-center gap-2 cursor-pointer text-sm font-medium text-henna-900">
+                  <input type="checkbox" id="calc-portrait" onchange="calculateEstimate()" class="accent-henna-800 rounded">
+                  Include Couple Face Portraits / Wedding Motifs
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Output Card -->
+          <div class="bg-sand p-6 rounded-2xl border border-henna-300/80 flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase font-bold tracking-widest text-gold-700">Estimated Summary</span>
+              <h3 id="calc-package-title" class="font-cinzel text-2xl font-bold text-henna-950 mt-1">Bespoke Bridal Couture</h3>
+              <p id="calc-package-desc" class="text-xs text-henna-700 mt-2 leading-relaxed">
+                Elbow length both sides with bridal feet coverage and personalized motifs.
+              </p>
+
+              <div class="mt-6 pt-6 border-t border-henna-300/60 space-y-3">
+                <div class="flex justify-between items-center text-sm">
+                  <span class="text-henna-700">Estimated Session Time:</span>
+                  <span id="calc-time" class="font-bold text-henna-950">5 - 6 Hours</span>
+                </div>
+                <div class="flex justify-between items-center text-sm">
+                  <span class="text-henna-700">Artist Assignment:</span>
+                  <span class="font-bold text-henna-950">Nikita (@nikita.art25)</span>
+                </div>
+                <div class="flex justify-between items-center text-sm">
+                  <span class="text-henna-700">Henna Cones:</span>
+                  <span class="font-bold text-henna-950">100% Organic Sojat Cones</span>
+                </div>
+                <div class="flex justify-between items-center text-base pt-3 border-t border-henna-300/60">
+                  <span class="font-cinzel font-bold text-henna-950">Starting Price:</span>
+                  <span id="calc-price" class="font-cinzel font-bold text-xl text-emerald-800">Rs. 1,999 onwards*</span>
+                </div>
+                <p class="text-[11px] text-henna-600 italic text-right mt-1">
+                  *Starting from 1999 rupees only. Final price depends on the type of service & coverage.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4">
+              <a href="#book" onclick="prefillBookingFromCalc()" class="w-full inline-flex items-center justify-center gap-2 bg-henna-900 hover:bg-henna-950 text-gold-300 py-3 rounded-xl font-cinzel text-xs font-bold uppercase tracking-widest shadow transition">
+                <span>Book This Package</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BOOKING & CONTACT SECTION -->
+  <section id="contact" class="py-20 bg-cream">
+    <div id="book" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-henna-950 text-white rounded-3xl p-8 sm:p-12 border border-gold-500/30 shadow-2xl relative overflow-hidden">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Left Info Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-gold-400">
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              Official Booking Desk
+            </div>
+            <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-gold-300">
+              Connect with Nikita's Art
+            </h2>
+            <p class="text-henna-200 text-sm leading-relaxed">
+              We welcome bridal bookings, festival slots, and private party inquiries. Reach out directly on WhatsApp or drop us an email with your date and venue.
+            </p>
+
+            <div class="space-y-4 pt-4 border-t border-henna-800">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/917828975132" target="_blank" class="flex items-center gap-3 text-sm text-emerald-400 hover:text-emerald-300 transition">
+                <div class="w-9 h-9 rounded-full bg-emerald-950 border border-emerald-500/40 flex items-center justify-center shrink-0">
+                  <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i>
+                </div>
+                <div>
+                  <div class="text-[10px] uppercase font-bold text-emerald-500">Official WhatsApp</div>
+                  <div class="font-bold text-white">+91 78289 75132</div>
+                </div>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:mehandiartnikita25@gmail.com" class="flex items-center gap-3 text-sm text-amber-300 hover:text-amber-200 transition">
+                <div class="w-9 h-9 rounded-full bg-amber-950 border border-amber-500/40 flex items-center justify-center shrink-0">
+                  <i data-lucide="mail" class="w-5 h-5 text-amber-400"></i>
+                </div>
+                <div>
+                  <div class="text-[10px] uppercase font-bold text-amber-400">Official Email</div>
+                  <div class="font-bold text-white">mehandiartnikita25@gmail.com</div>
+                </div>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="flex items-center gap-3 text-sm text-pink-400 hover:text-pink-300 transition">
+                <div class="w-9 h-9 rounded-full bg-pink-950 border border-pink-500/40 flex items-center justify-center shrink-0">
+                  <i data-lucide="instagram" class="w-5 h-5 text-pink-400"></i>
+                </div>
+                <div>
+                  <div class="text-[10px] uppercase font-bold text-pink-400">Instagram Handle</div>
+                  <div class="font-bold text-white">@nikita.art25</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- WhatsApp Direct Button -->
+            <div class="pt-4">
+              <a href="https://wa.me/917828975132?text=Hello%20Nikita!%20I%20would%20like%20to%20check%20your%20availability%20for%20my%20wedding/event." target="_blank" class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider transition shadow-lg w-full justify-center">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Instant WhatsApp: 7828975132</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Booking Form -->
+          <div class="lg:col-span-7 bg-henna-900/80 p-6 sm:p-8 rounded-2xl border border-gold-500/20 backdrop-blur-md">
+            <form id="booking-form" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-gold-300 uppercase tracking-wider mb-1">Your Name *</label>
+                  <input type="text" id="form-name" required placeholder="e.g. Priya Sharma" class="w-full bg-henna-950 border border-henna-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400 placeholder:text-henna-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-gold-300 uppercase tracking-wider mb-1">Phone / WhatsApp *</label>
+                  <input type="tel" id="form-phone" required placeholder="e.g. 7828975132" class="w-full bg-henna-950 border border-henna-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400 placeholder:text-henna-500">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-gold-300 uppercase tracking-wider mb-1">Your Email</label>
+                  <input type="email" id="form-email" placeholder="priya@example.com" class="w-full bg-henna-950 border border-henna-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400 placeholder:text-henna-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-gold-300 uppercase tracking-wider mb-1">Event Date *</label>
+                  <input type="date" id="form-date" required class="w-full bg-henna-950 border border-henna-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-gold-300 uppercase tracking-wider mb-1">Service Required *</label>
+                  <select id="form-service" class="w-full bg-henna-950 border border-henna-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400">
+                    <option value="Bridal">Royal Bridal Mehendi</option>
+                    <option value="Arabic">Arabic & Indo-Western</option>
+                    <option value="Festive">Festivals (Karwa Chauth/Diwali/Eid)</option>
+                    <option value="Sangeet Party">Sangeet & Guest Henna</option>
+                    <option value="Baby Shower">Baby Shower / Godh Bharai</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-gold-300 uppercase tracking-wider mb-1">Event Location / City *</label>
+                  <input type="text" id="form-city" required placeholder="e.g. Indore, Bhopal, Mumbai, Delhi" class="w-full bg-henna-950 border border-henna-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400 placeholder:text-henna-500">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-gold-300 uppercase tracking-wider mb-1">Special Details or Reference</label>
+                <textarea id="form-notes" rows="3" placeholder="Tell us about your event theme, coverage length, or reference from @nikita.art25..." class="w-full bg-henna-950 border border-henna-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400 placeholder:text-henna-500"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-cinzel font-bold py-3.5 rounded-xl uppercase tracking-widest text-xs shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Submit & Open WhatsApp Confirmation</span>
+              </button>
+
+              <div id="form-success" class="hidden p-4 rounded-xl bg-emerald-900/80 border border-emerald-500 text-emerald-200 text-xs text-center font-medium">
+                Thank you! Your details have been prepared for Nikita. Opening WhatsApp now...
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLIENT TESTIMONIALS & TRUST MARQUEE (RUNNING AT BOTTOM OF HOMEPAGE) -->
+  <section id="testimonials" class="py-16 bg-sand border-t border-henna-200 overflow-hidden relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-henna-100 border border-henna-300 text-henna-900 text-xs font-semibold uppercase tracking-widest mb-3">
+        <i data-lucide="heart" class="w-4 h-4 text-rose-600 fill-rose-600"></i>
+        <span>500+ Happy Brides & Families • 100% Genuine Reviews</span>
+      </div>
+      <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-henna-950">
+        Real Client Love & Feedback
+      </h2>
+      <p class="text-henna-800 text-sm max-w-2xl mx-auto mt-2">
+        Honest words from our brides, bridesmaids, and families. (Hover on any card to pause and read)
+      </p>
+    </div>
+
+    <!-- ROW 1: SCROLLING LEFT -->
+    <div class="relative w-full overflow-hidden mb-5">
+      <div class="animate-marquee gap-5">
+        
+        <!-- Review 1: Pooja Sharma -->
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">Bridal Mehendi</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Shaadi ke liye best mehendi artist! Nikita ji ne bride & groom portrait bilkul perfect banaya. 2 din baad stain itna dark mahogany aaya ki sabhi guests tareef kar rahe the!"
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Spot-on couple portraits and deep rich stain that lasted over 12 days. Truly worth every rupee!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">PS</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Pooja Sharma</h4>
+              <p class="text-[10px] text-henna-600">Verified Bridal Client</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2: Anjali Verma -->
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full">Karwa Chauth Special</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Karwa Chauth par Arabic design lagwaya tha. Starting price sirf Rs 1999 se shuru tha jo bahut pocket-friendly laga. 100% natural cone thi, skin par bilkul jalan nahi hui!"
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Budget-friendly festive packages starting from Rs. 1,999 with organic herbal cones. Zero irritation!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">AV</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Anjali Verma</h4>
+              <p class="text-[10px] text-henna-600">Festive Client</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3: Sneha Gupta -->
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded-full">Sangeet Party</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Sangeet night par 45 guests ki mehendi Nikita aur unki team ne time par complete kar di. Sabhi bridesmaids designs aur speed dekhkar super happy thi!"
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Handled 45 guests on Sangeet night effortlessly. Super fast, neat, and highly professional!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">SG</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Sneha Gupta</h4>
+              <p class="text-[10px] text-henna-600">Sangeet Event Host</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4: Priya Joshi -->
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">Royal Bridal</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Finishing aur detailing me Nikita ka koi match nahi hai. Humari wedding date aur pet puppy ka silhouette design me seamlessly include kiya. Loved the detailing!"
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Personalized our wedding date and pet silhouette into the bridal jaal seamlessly. Flawless artwork!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">PJ</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Priya Joshi</h4>
+              <p class="text-[10px] text-henna-600">Royal Bridal Client</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DUPLICATE SET 1 FOR SEAMLESS MARQUEE LOOP -->
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">Bridal Mehendi</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Shaadi ke liye best mehendi artist! Nikita ji ne bride & groom portrait bilkul perfect banaya. 2 din baad stain itna dark mahogany aaya ki sabhi guests tareef kar rahe the!"
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Spot-on couple portraits and deep rich stain that lasted over 12 days. Truly worth every rupee!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">PS</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Pooja Sharma</h4>
+              <p class="text-[10px] text-henna-600">Verified Bridal Client</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full">Karwa Chauth Special</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Karwa Chauth par Arabic design lagwaya tha. Starting price sirf Rs 1999 se shuru tha jo bahut pocket-friendly laga. 100% natural cone thi, skin par bilkul jalan nahi hui!"
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Budget-friendly festive packages starting from Rs. 1,999 with organic herbal cones. Zero irritation!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">AV</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Anjali Verma</h4>
+              <p class="text-[10px] text-henna-600">Festive Client</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ROW 2: SCROLLING RIGHT -->
+    <div class="relative w-full overflow-hidden">
+      <div class="animate-marquee-reverse gap-5">
+        
+        <!-- Review 5: Ritu Aggarwal -->
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full">Destination Wedding</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Destination wedding ke liye book kiya tha. Super punctual, sweet nature aur work me full perfectionist. Stain photography me bohot royal lag raha tha!"
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Booked for our destination wedding. Punctual, warm, and created breathtaking royal stains!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">RA</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Ritu Aggarwal</h4>
+              <p class="text-[10px] text-henna-600">Destination Bride</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6: Divya Patel -->
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full">Engagement Henna</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Engagement ke liye modern Arabic design banwaya. Design itna chic aur clean tha ki jewelry aur rings ke saath photos bohot pyari aayi. Sabne pucha kahan se lagwaya!"
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Modern chic Arabic engagement henna. Looked stunning with rings and close-up jewelry shots!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">DP</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Divya Patel</h4>
+              <p class="text-[10px] text-henna-600">Engagement Client</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 7: Meera Shrivastava -->
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-pink-100 text-pink-800 px-2 py-0.5 rounded-full">Baby Shower / Godh Bharai</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Baby shower ke liye gentle lavender organic mehendi lagwayi. Chemical-free paste hone ki wajah se totally safe feel hua. Bohot relaxing aur positive experience tha."
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Gentle lavender-infused henna for baby shower. 100% pregnancy-safe and soothing experience!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">MS</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Meera Shrivastava</h4>
+              <p class="text-[10px] text-henna-600">Mom-to-be Client</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 8: Kavita Rathore -->
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-orange-100 text-orange-800 px-2 py-0.5 rounded-full">Festive Celebrations</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Har festival par main sirf Nikita's Art se hi mehendi lagwati hoon. Pure Sojat leaves ki paste hoti hai aur color hamesha bohot deep aur dark chadhta hai."
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "For every Teej and Diwali, I only trust Nikita's Art. Rich natural stain and therapeutic herbal fragrance!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">KR</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Kavita Rathore</h4>
+              <p class="text-[10px] text-henna-600">Repeat Festive Client</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DUPLICATE SET 2 FOR SEAMLESS MARQUEE LOOP -->
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full">Destination Wedding</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Destination wedding ke liye book kiya tha. Super punctual, sweet nature aur work me full perfectionist. Stain photography me bohot royal lag raha tha!"
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Booked for our destination wedding. Punctual, warm, and created breathtaking royal stains!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">RA</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Ritu Aggarwal</h4>
+              <p class="text-[10px] text-henna-600">Destination Bride</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-80 sm:w-96 bg-white p-5 rounded-2xl border border-henna-200 shadow-sm shrink-0 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-500 tracking-wider">★★★★★</span>
+              <span class="text-[10px] font-semibold bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full">Engagement Henna</span>
+            </div>
+            <p class="text-xs font-medium text-henna-950 leading-relaxed mb-2">
+              "Engagement ke liye modern Arabic design banwaya. Design itna chic aur clean tha ki jewelry aur rings ke saath photos bohot pyari aayi. Sabne pucha kahan se lagwaya!"
+            </p>
+            <p class="text-[11px] text-henna-600 italic border-t border-henna-100 pt-2">
+              "Modern chic Arabic engagement henna. Looked stunning with rings and close-up jewelry shots!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-4 pt-3 border-t border-henna-100">
+            <div class="w-8 h-8 rounded-full bg-henna-200 text-henna-900 font-bold flex items-center justify-center text-xs font-cinzel">DP</div>
+            <div>
+              <h4 class="font-bold text-xs text-henna-950">Divya Patel</h4>
+              <p class="text-[10px] text-henna-600">Engagement Client</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/917828975132?text=Hi%20Nikita!%20I'm%20visiting%20your%20website%20and%20would%20love%20to%20know%20your%20availability%20for%20my%20event." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center border-2 border-white" title="Chat on WhatsApp: +91 78289 75132">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="bg-henna-950 text-henna-300 py-16 border-t border-henna-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        
+        <!-- Brand -->
+        <div class="space-y-4 md:col-span-1">
+          <span class="font-cinzel text-2xl font-bold tracking-widest text-white">
+            NIKITA'S <span class="text-gold-400">ART</span>
+          </span>
+          <p class="text-xs text-henna-300 leading-relaxed">
+            Bespoke bridal, Arabic, and festive henna artistry. Handcrafted with 100% natural, triple-sifted organic henna leaves and pure essential oils.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="w-8 h-8 rounded-full bg-pink-900/60 flex items-center justify-center text-pink-300 hover:text-white hover:bg-pink-800 transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a href="https://wa.me/917828975132" target="_blank" class="w-8 h-8 rounded-full bg-emerald-900/60 flex items-center justify-center text-emerald-300 hover:text-white hover:bg-emerald-800 transition"><i data-lucide="message-circle" class="w-4 h-4"></i></a>
+            <a href="mailto:mehandiartnikita25@gmail.com" class="w-8 h-8 rounded-full bg-amber-900/60 flex items-center justify-center text-amber-300 hover:text-white hover:bg-amber-800 transition"><i data-lucide="mail" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-cinzel text-sm font-bold uppercase tracking-wider text-white">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#about" class="hover:text-gold-400 transition">About Nikita</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition">All Services</a></li>
+            <li><a href="#gallery" class="hover:text-gold-400 transition">Bridal Lookbook</a></li>
+            <li><a href="#instagram-feed" class="hover:text-gold-400 transition">Instagram @nikita.art25</a></li>
+            <li><a href="#calculator" class="hover:text-gold-400 transition">Price Estimator</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="space-y-3">
+          <h4 class="font-cinzel text-sm font-bold uppercase tracking-wider text-white">Our Specialties</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="hover:text-gold-400 transition">Royal Bridal Portraits</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition">Modern Arabic Vines</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition">Festivals (Karwa Chauth/Diwali/Eid)</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition">Sangeet & Party Henna</a></li>
+            <li><a href="#services" class="hover:text-gold-400 transition">Safe Pregnancy / Belly Henna</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact Details -->
+        <div class="space-y-3">
+          <h4 class="font-cinzel text-sm font-bold uppercase tracking-wider text-white">Official Contact</h4>
+          <div class="text-xs space-y-2">
+            <div>
+              <span class="text-henna-400 block text-[10px] uppercase font-bold">Booking WhatsApp:</span>
+              <a href="https://wa.me/917828975132" target="_blank" class="text-emerald-400 font-bold hover:underline">+91 78289 75132</a>
+            </div>
+            <div>
+              <span class="text-henna-400 block text-[10px] uppercase font-bold">Email:</span>
+              <a href="mailto:mehandiartnikita25@gmail.com" class="text-amber-300 font-medium hover:underline">mehandiartnikita25@gmail.com</a>
+            </div>
+            <div>
+              <span class="text-henna-400 block text-[10px] uppercase font-bold">Instagram:</span>
+              <a href="https://www.instagram.com/nikita.art25/" target="_blank" class="text-pink-400 font-medium hover:underline">@nikita.art25</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-henna-900 text-center text-xs text-henna-500">
+        Copyright (c) 2026 Nikita's Art (@nikita.art25). All rights reserved. Designed with luxury bespoke mehendi aesthetics.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+    document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
+
+    // Gallery Filter Logic
+    function filterGallery(category) {
+      const buttons = document.querySelectorAll('.gallery-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-henna-900', 'text-gold-300');
+        btn.classList.add('bg-sand', 'text-henna-900');
+      });
+      event.target.classList.remove('bg-sand', 'text-henna-900');
+      event.target.classList.add('bg-henna-900', 'text-gold-300');
+
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Lightbox Logic
+    function openLightbox(src, title, desc) {
+      const lightbox = document.getElementById('lightbox');
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-title').innerText = title;
+      document.getElementById('lightbox-desc').innerText = desc;
+      lightbox.classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.add('hidden');
+    }
+
+    // Calculator / Estimator Logic
+    function calculateEstimate() {
+      const service = document.getElementById('calc-service').value;
+      const coverage = document.getElementById('calc-coverage').value;
+      const includeFeet = document.querySelector('input[name="feet-option"]:checked').value === 'yes';
+      const includePortrait = document.getElementById('calc-portrait').checked;
+
+      let title = "Custom Package";
+      let desc = "";
+      let time = "5 - 6 Hours";
+      let price = "From Rs. 1,999 onwards*";
+
+      if (service === 'bridal') {
+        title = "Royal Bridal Package";
+        time = "5 - 6 Hours";
+        if (coverage === 'elbow') {
+          price = includeFeet ? "From Rs. 7,999 - Rs. 11,999*" : "From Rs. 5,999 - Rs. 8,999*" ;
+          desc = "Full arms up to elbow (intricate front & back)" + (includeFeet ? " plus bridal feet & anklet jaal." : ".");
+        } else if (coverage === 'forearm') {
+          time = "4 - 5 Hours";
+          price = includeFeet ? "From Rs. 4,999 - Rs. 6,999*" : "From Rs. 3,999 - Rs. 5,499*";
+          desc = "Mid-forearm coverage" + (includeFeet ? " plus bridal feet." : ".");
+        } else {
+          time = "3 - 4 Hours";
+          price = includeFeet ? "From Rs. 3,499 - Rs. 4,999*" : "From Rs. 1,999 - Rs. 3,499*";
+          desc = "Palms and wrist coverage only.";
+        }
+
+        if (includePortrait) {
+          desc += " Includes personalized couple portrait figures (varies by design complexity).";
+        }
+      } else if (service === 'arabic') {
+        title = "Contemporary Arabic Package";
+        time = coverage === 'elbow' ? "2 - 3 Hours" : "1 - 2 Hours";
+        price = "From Rs. 1,999 onwards*";
+        desc = "Modern flowing botanical trails, negative space flowers, and shaded leaves.";
+      } else if (service === 'festive') {
+        title = "Festive Special (Karwa Chauth/Diwali/Eid)";
+        time = "1 - 2 Hours";
+        price = "From Rs. 1,999 onwards*";
+        desc = "Curated festive mandalas, fingers jaal, and celebration motifs.";
+      } else if (service === 'guest') {
+        title = "Sangeet & Party Henna";
+        time = "Hourly Booking (Min 2 - 3 Hours)";
+        price = "From Rs. 1,999 / hour*";
+        desc = "Fast, chic guest designs for bridesmaids & guests. Styles 12-15 guests per hour.";
+      }
+
+      document.getElementById('calc-package-title').innerText = title;
+      document.getElementById('calc-package-desc').innerText = desc;
+      document.getElementById('calc-time').innerText = time;
+      document.getElementById('calc-price').innerText = price;
+    }
+
+    function prefillBookingFromCalc() {
+      const service = document.getElementById('calc-service').value;
+      const select = document.getElementById('form-service');
+      if (service === 'bridal') select.value = 'Bridal';
+      else if (service === 'arabic') select.value = 'Arabic';
+      else if (service === 'festive') select.value = 'Festive';
+      else if (service === 'guest') select.value = 'Sangeet Party';
+      
+      const desc = document.getElementById('calc-package-desc').innerText;
+      document.getElementById('form-notes').value = "Selected Package: " + desc;
+    }
+
+    // Booking Submission Logic -> Sends direct to official WhatsApp
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('form-name').value;
+      const phone = document.getElementById('form-phone').value;
+      const email = document.getElementById('form-email').value;
+      const date = document.getElementById('form-date').value;
+      const service = document.getElementById('form-service').value;
+      const city = document.getElementById('form-city').value;
+      const notes = document.getElementById('form-notes').value;
+
+      document.getElementById('form-success').classList.remove('hidden');
+
+      const whatsappText = `Hello Nikita (@nikita.art25)! My name is ${name}. I would like to inquire about ${service} mehendi for my event on ${date} in ${city}.\nPhone: ${phone}\nEmail: ${email || 'N/A'}\nNotes: ${notes}`;
+      const whatsappUrl = `https://wa.me/917828975132?text=${encodeURIComponent(whatsappText)}`;
+
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 600);
+    }
+  </script>
+</body>
+</html>
